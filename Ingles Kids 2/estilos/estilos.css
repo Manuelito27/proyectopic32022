@@ -14,6 +14,7 @@
 
 body {
 	display: flex;
+	flex-direction: column;
 	font-family: var(--titulo);
 	justify-content: center;
 	align-items: center;
@@ -159,15 +160,29 @@ body {
 }
 
 .formulario_registro label:nth-child(1){
-	padding-right: 25px;
+	padding-right: 103px;
 }
-
+.formulario_registro label:nth-child(4){
+	padding-right: 100px;
+}
+.formulario_registro label:nth-child(7){
+	padding-right: 174px;
+}
+.formulario_registro label:nth-child(10){
+	padding-right: 144px;
+}
+.formulario_registro label:nth-child(16){
+	padding-right: 144px;
+}
+.formulario_registro label:nth-child(19){
+	padding-right: 180px;
+}
 
 .formulario_registro input{
 	margin: 10px;
 	border-radius: 50px;
 	border: none;
-	width: 25vw;
+	width: 30vw;
 	height: 7vh;
 	background: #B7D3E1;
 	box-shadow: 4px 4px 11px 0px rgba(62, 61, 61, 0.65);
@@ -180,4 +195,21 @@ body {
 .formulario_registro input:focus{
 	outline: none;
 	background: #CBEDF1;
+}
+
+.barritachida{
+	display: flex;
+	
+	background: #375A7F;	
+	width: 100vw;
+	height: 400vh;
+	border-radius: 0px 0px 0px 0px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.Logo2{
+	width: 3.5vw;
+	border-radius: 15px;
+	
 }
