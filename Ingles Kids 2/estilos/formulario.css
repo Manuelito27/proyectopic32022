@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,600;0,700;1,100;1,600;1,700&family=Merriweather:ital,wght@0,300;1,300&display=swap"); 
+
+:root { 
+	--titulo: "Barlow", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: var(--titulo);
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(white,#9397D4);
+	background-size: cover;
+	background-repeat: repeat;
+	height: 100vh;
+}
+
+.formulario-login{
+	width: 75vw;
+	height: 75vh;
+	display: flex;
+	align-items: center;
+	box-shadow: 5px 5px 19px 0px rgb(0 0 0 / 65%);
+	border-radius: 15px;
+}
+
+.formulario_bienvenida{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #375A7F;	
+	width: 15vw;
+	height: 75vh;
+	border-radius: 15px 0px 0px 15px;
+	flex-wrap: wrap;
+	padding-top: 25px;
+}
+
+.Logo{
+	width: 5vw;
+	border-radius: 25px;
+}
+
+.LogoTexto{
+	padding-top: 55px;
+	color: white;
+	font-size: 1.3em;
+	padding-bottom: 80px;
+}
+
+.Logoninio{
+	padding-top: 70px;
+	width: 100%;
+	border-radius: 0px 0px 0px 15px;
+}
+
+.formulario_contenido{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:rgba(169, 223, 255, 0.361);
+	width: 60vw;
+	height: 75vh;
+	border-radius: 0px 15px 15px 0px;
+	flex-direction: column;
+	padding: 25px;
+	
+}
+
+.userform{
+	width: 15%;
+	padding-bottom: 30px;
+}
+
+.formulario_contenido2{
+	padding: 20px;
+	font-size: 1.9em;
+	font-weight: 600;
+}
+
+.formulario_contenido2 label{
+	padding-right: 5px;
+	
+}
+
+.formulario_contenido2 label:nth-child(1){
+	padding-right: 55px;
+}
+
+
+.formulario_contenido2 input{
+	margin: 10px;
+	border-radius: 50px;
+	border: none;
+	width: 25vw;
+	height: 7vh;
+	background: #B7D3E1;
+	box-shadow: 4px 4px 11px 0px rgba(62, 61, 61, 0.65);
+	font-family: var(--titulo);
+	font-size: 0.7em;
+	font-weight: 600;
+	padding: 10px;
+}
+
+.formulario_contenido2 input:focus{
+	outline: none;
+	background: #CBEDF1;
+}
+
+.formulario_contenidobuttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20px;
+	gap: 15px;
+}
+
+.formulario_contenidobuttons button{
+	background: #2E92A9;
+	margin: 10px;
+	border-radius: 50px;
+	border: none;
+	width: 17vw;
+	height: 7vh;
+	box-shadow: 4px 4px 11px 0px rgba(62, 61, 61, 0.65);
+	font-family: var(--titulo);
+	font-size: 0.7em;
+	font-weight: 600;
+	color: white;
+}
+
+.formulario_contenidobuttons button:hover{
+	color: black;
+	background: #7FD4DD;
+}
+
+.barra{
+	background: blue;
+	width: 100vw;
+	height: 8vh;
+}
+
+
+.formulario_registro{
+	padding: 20px;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.formulario_registro label{
+	padding-right: 5px;
+	column-gap: normal;
+}
+
+.formulario_registro label:nth-child(1){
+	padding-right: 103px;
+}
+.formulario_registro label:nth-child(4){
+	padding-right: 100px;
+}
+.formulario_registro label:nth-child(7){
+	padding-right: 174px;
+}
+.formulario_registro label:nth-child(10){
+	padding-right: 144px;
+}
+.formulario_registro label:nth-child(16){
+	padding-right: 144px;
+}
+.formulario_registro label:nth-child(19){
+	padding-right: 180px;
+}
+
+.formulario_registro input{
+	margin: 10px;
+	border-radius: 50px;
+	border: none;
+	width: 30vw;
+	height: 7vh;
+	background: #B7D3E1;
+	box-shadow: 4px 4px 11px 0px rgba(62, 61, 61, 0.65);
+	font-family: var(--titulo);
+	font-size: 0.7em;
+	font-weight: 600;
+	padding: 10px;
+}
+
+.formulario_registro input:focus{
+	outline: none;
+	background: #CBEDF1;
+}
+
+.barritachida{
+	/* display: flex; */
+	background: #375A7F;	
+	width: 100%;
+	padding: 10px;
+	/* border-radius: 0px 0px 0px 0px;
+	flex-wrap: wrap;
+	justify-content:flex-start;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	padding-left: 10px; */
+}
+
+.Logo2{
+	width: 3vw;
+	border-radius: 15px;
+}
+
+.content{
+	text-align: center;
+}
