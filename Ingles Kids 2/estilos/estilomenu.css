@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-yellow: #f1c40f;
+  --color-red: #db2b39;
+  --color-blue-dark: #29335c;
+  --color-blue: #2130b3;
+
+  --size-btn-collapse: 10.5rem;
+
+  --time-animation: 0.3s;
+}
+body {
+  font-family: sans-serif;
+}
+
+.nav-main a {
+        text-decoration: none;
+        color: inherit;
+ }
+
+.nav-main {
+        background-color:var(--color-yellow);
+        padding: 0.6rem 1.2rem;
+        display: flex;
+        align-items: center;
+ }
