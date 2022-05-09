@@ -174,7 +174,7 @@ body {
 	padding-right: 144px;
 }
 .formulario_registro label:nth-child(16){
-	padding-right: 144px;
+	padding-right: 123px;
 }
 .formulario_registro label:nth-child(19){
 	padding-right: 180px;
@@ -200,23 +200,21 @@ body {
 }
 
 .barritachida{
-	/* display: flex; */
 	background: #375A7F;	
 	width: 100%;
-	padding: 10px;
-	/* border-radius: 0px 0px 0px 0px;
-	flex-wrap: wrap;
-	justify-content:flex-start;
-	padding-top: 20px;
-	padding-bottom: 5px;
-	padding-left: 10px; */
+	padding: 9px;
 }
 
 .Logo2{
-	width: 3vw;
+	width: 3.4vw;
 	border-radius: 15px;
 }
 
 .content{
 	text-align: center;
+}
+
+.untexto label{
+	font-size: 1.6em;
+	font-weight: 600;
 }
