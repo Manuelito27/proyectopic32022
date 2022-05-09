@@ -14,6 +14,8 @@
   --size-btn-collapse: 10.5rem;
 
   --time-animation: 0.3s;
+
+    --box-shadow: 3px 7px 7px rgba(0 0 0 / 22%);
 }
 body {
   font-family: sans-serif;
@@ -29,4 +31,16 @@ body {
         padding: 0.6rem 1.2rem;
         display: flex;
         align-items: center;
+ }
+ .nav-main__btn-collapse-icon {
+     --size: 45px;
+     width: var(--size);
+     height:  var(--size);
+     border-radius:50%;
+     background-color:var(--color-blue-dark);
+     padding:0.6rem 0.3;
+     z-index: 10;
+     cursor:pointer;
+     box-shadow: var(--box-shadow);
+
  }
