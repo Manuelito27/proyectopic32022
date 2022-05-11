@@ -51,7 +51,7 @@ body {
  }
  .icon-nav{
    display: block;
-   width: 40%;
+   width: 60%;
    height: 1.5px;
    background-color: #fff;
    transition: transform var(--time-animation);
@@ -81,7 +81,7 @@ body {
   background-color: var(--color-red);
   position:absolute;
   left:0 ;
-  top:0 ;
+  top: 0; ;
   transform: translateX(calc(var(--size-btn-collapse)/2*-1));
   transition: transform var(--time-animation);
   
@@ -122,11 +122,15 @@ body {
 .nav-main_menu{
   position: absolute;
   left:0;
-  top: 6.3%;
+  top: 6.5%;
   display: flex;
   flex-direction: column;
   width:var(--size-btn-collapse);
+<<<<<<< HEAD
   height: calc(102.3vh - 65px);
+=======
+  height: calc(101vh - 65px);
+>>>>>>> 8a933c9e045c4d853798cc67711195b30773784c
   background-color: #7399C7;
   padding: 2rem;
   font-weight: 300 ;
