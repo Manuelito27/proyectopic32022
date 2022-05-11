@@ -18,7 +18,7 @@ body {
 	font-family: var(--titulo);
 	/* justify-content: center;
 	align-items: center; */
-	background: linear-gradient(white,#9397D4);
+	background: linear-gradient(white,#9397D5);
 	background-size: cover;
 	background-repeat: repeat;
 	height: 100vh;
