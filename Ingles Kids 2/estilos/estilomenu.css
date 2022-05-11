@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 :root {
-  --color-yellow: #f1c40f;
-  --color-red: #db2b39;
+  --color-yellow: #375A7F;
+  --color-red: #7399C7;
   --color-blue-dark: #29335c;
   --color-blue: #2130b3;
 
@@ -110,20 +110,25 @@ body {
 
 .social-networks__link-item{
   margin: 0 1rem;
+  
 }
 
 .nav-main__btn-collapse:checked ~ .social-networks{
   transform: scaleX(1);
 }
+.nav-main__btn-collapse:checked ~ .social-networks.social-networks__link-item{
+  animation: effectOpacity var(--time-animation) 0.2s forwards;
+}
+
 .nav-main_menu{
   position: absolute;
   left:0;
-  top: 7%;
+  top: 6.3%;
   display: flex;
   flex-direction: column;
   width:var(--size-btn-collapse);
   height: calc(100vh - 65px);
-  background-color: #db2b39;
+  background-color: #7399C7;
   padding: 2rem;
   font-weight: 300 ;
   box-shadow: var(--box-shadow);
@@ -136,6 +141,8 @@ body {
 .nav-main__link-item{
   
   margin-bottom: 2rem;
+  opacity: 0;
+
 }
 .nav-main__link-item > .far{
   
@@ -146,4 +153,13 @@ body {
 .nav-main__btn-collapse:checked ~ .nav-main_menu{
   transform: scaleY(1);
 
+}
+
+.nav-main__btn-collapse:checked ~ .nav-main_menu .nav-main__link-item{
+  animation: effectOpacity var(--time-animation) .3s forwards;
+}
+@keyframes effectOpacity{
+  to{
+    opacity: 1;
+  }
 }
