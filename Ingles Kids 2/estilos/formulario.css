@@ -96,6 +96,9 @@ body {
 	padding-right: 55px;
 }
 
+.formulario_contenido2 label:nth-child(7){
+	padding-right: 65px;
+}
 
 .formulario_contenido2 input{
 	margin: 10px;
@@ -111,7 +114,26 @@ body {
 	padding: 10px;
 }
 
+.formulario_contenido2 select{
+	margin: 10px;
+	border-radius: 50px;
+	border: none;
+	width: 25vw;
+	height: 7vh;
+	background: #B7D3E1;
+	box-shadow: 4px 4px 11px 0px rgba(62, 61, 61, 0.65);
+	font-family: var(--titulo);
+	font-size: 0.7em;
+	font-weight: 600;
+	padding: 10px;
+}
+
 .formulario_contenido2 input:focus{
+	outline: none;
+	background: #CBEDF1;
+}
+
+.formulario_contenido2 select:focus{
 	outline: none;
 	background: #CBEDF1;
 }
@@ -182,6 +204,20 @@ body {
 }
 
 .formulario_registro input{
+	margin: 10px;
+	border-radius: 50px;
+	border: none;
+	width: 30vw;
+	height: 7vh;
+	background: #B7D3E1;
+	box-shadow: 4px 4px 11px 0px rgba(62, 61, 61, 0.65);
+	font-family: var(--titulo);
+	font-size: 0.7em;
+	font-weight: 600;
+	padding: 10px;
+}
+
+.formulario_registro select{
 	margin: 10px;
 	border-radius: 50px;
 	border: none;
