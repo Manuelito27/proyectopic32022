@@ -7,7 +7,7 @@
 }
 :root {
   --color-yellow: #375A7F;
-  --color-red: #7399C7;
+  --color-red: #eff4fa;
   --color-blue-dark: #29335c;
   --color-blue: #2130b3;
   --size-btn-collapse: 10.5rem;
@@ -78,7 +78,7 @@ body {
  .nav-main__btb-collapse-bg{
   height: 6.5%;
   width: var(--size-btn-collapse) ;
-  background-color: var(--color-red);
+  background-color: #7399C7;
   position:absolute;
   left:0 ;
   top: 0; ;

@@ -12,17 +12,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	/* display: flex;
-	flex-direction: column; */
-	font-family: var(--titulo);
-	/* justify-content: center;
-	align-items: center; */
-	background: linear-gradient(white,#9397D5);
-	background-size: cover;
-	background-repeat: repeat;
-	height: 100vh;
-}
 
 .formulario-login{
 	width: 75vw;
