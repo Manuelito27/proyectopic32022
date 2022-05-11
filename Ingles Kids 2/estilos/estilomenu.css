@@ -126,7 +126,7 @@ body {
   display: flex;
   flex-direction: column;
   width:var(--size-btn-collapse);
-  height: calc(100vh - 65px);
+  height: calc(102.3vh - 65px);
   background-color: #7399C7;
   padding: 2rem;
   font-weight: 300 ;
@@ -164,7 +164,6 @@ body {
 }
 
 .info{
-  
   height: 91.3vh;
 }
 
