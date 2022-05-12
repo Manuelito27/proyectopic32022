@@ -29,7 +29,7 @@
 						<br/>
 						<div class="formulario_contenidobuttons">
 							<button type="submit" name="">Ingresar</button>
-							<a class="mueveme" href="formulario.html">
+							<a class="mueveme" href="formulario.php">
 								<button type="submit" name="">Registrarse</button>
 							</a>
 						</div>
