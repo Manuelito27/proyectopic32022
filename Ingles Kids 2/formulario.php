@@ -13,6 +13,7 @@
 		<div class="untexto">
 			<label>Crear cuenta</label>
 		</div>
+		
 		<div class="formulario_registro">
 			<form action="form.php" method="post">
 				<label>Apellido Paterno</label>
