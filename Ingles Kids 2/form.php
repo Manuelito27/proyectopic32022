@@ -12,13 +12,17 @@
     $genero = $_POST['Genero'];
 
     if($apellidoP==""){
-        echo 'No se escribio Apellido Paterno';
+        echo '<script>alert("No se escribio Apellido Paterno")</script>';
+        header("location: formulario.php");
     }else if($nombre==""){
-        echo 'No se escribio un nombre';
+        echo '<script>alert("No se escribio el nombre")</script>';
+        header("location: index.php");
     }else if($pass==""){
-        echo 'No se escribio ninguna contraseña';
+        echo '<script>alert("No se escribio ninguna contraseña")</script>';
+        header("location: index.php");
     }else if($passc!=$pass){
-        echo 'Las contraseñas no son iguales';
+        echo '<script>alert("Las contraseñas son diferentes")</script>';
+        header("location: index.php");
     }else{
         if($rol=="Docente"){
             $sql = "INSERT INTO docente (Nombre,ApellidoP,ApellidoM,Pass)
