@@ -29,7 +29,7 @@
 						<br/>
 						<div class="formulario_contenidobuttons">
 						<button type="submit" name="">Ingresar</button>
-						<button onclick="abrir()" type="submit" name="">Registrarse</button>
+						<button onclick="abrir()" name="">Registrarse</button>
 						<script>
 							function abrir(){
 								window.open("formulario.php");

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>Formulario Registro</title>
 <link rel="stylesheet" href="estilos/estilos.css" type="text/css">
 </head>
