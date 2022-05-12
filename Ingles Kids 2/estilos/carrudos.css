@@ -83,3 +83,32 @@ body {
       color: aliceblue;
 
 }
+.la_info2{
+    text-align:left; 
+     font-family: 'Dancing Script',cursive;     
+    color: black;
+    margin-left: 100px;
+    font-size: 30px
+
+}
+
+
+.descripcion{
+    text-align: justify; 
+    margin-left: 100px; 
+    margin-right: 100px; 
+    font-size: 22px
+
+}
+.texto1{
+    text-align: justify; 
+    margin-left: 100px; 
+    margin-right: 100px; 
+    font-size: 23px
+    
+
+}
+hr {
+    height: 1px;
+    color: red;
+  }
