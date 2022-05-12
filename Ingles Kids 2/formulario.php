@@ -13,6 +13,7 @@
 		<div class="untexto">
 			<label>Crear cuenta</label>
 		</div>
+		
 		<div class="formulario_registro">
 		
 		<!--
