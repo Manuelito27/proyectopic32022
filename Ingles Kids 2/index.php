@@ -29,9 +29,12 @@
 						<br/>
 						<div class="formulario_contenidobuttons">
 							<button type="submit" name="">Ingresar</button>
-							<a class="mueveme" href="formulario.php">
-								<button type="submit" name="">Registrarse</button>
-							</a>
+							<button onclick="abrir()" type="submit" name="">Registrarse</button>
+							<script>
+								function abrir(){
+									window.open("formulario.php");
+								}
+							</script>
 						</div>
 					</form>
 				</div>
