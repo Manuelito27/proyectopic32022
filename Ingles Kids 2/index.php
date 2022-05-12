@@ -16,7 +16,7 @@
 			<div class="formulario_contenido">
 				<img src="imagenes/avatar.png" class="userform">
 				<div class="formulario_contenido2">
-					<form action="" method="post">
+					<form action="user.php" method="post">
 						<label>Usuario</label>
 						<input type="text" name="Usuario" value="" placeholder="Usuario"><br/>
 						<label>Contraseña</label>
@@ -28,19 +28,18 @@
 						</select>
 						<br/>
 						<div class="formulario_contenidobuttons">
-							<button type="submit" name="">Ingresar</button>
-							<button onclick="abrir()" type="submit" name="">Registrarse</button>
-							<script>
-								function abrir(){
-									window.open("formulario.php");
-								}
-							</script>
-						</div>
+						<button type="submit" name="">Ingresar</button>
+						<button onclick="abrir()" type="submit" name="">Registrarse</button>
+						<script>
+							function abrir(){
+								window.open("formulario.php");
+							}
+						</script>
+					</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-
 </body>
 </html>
