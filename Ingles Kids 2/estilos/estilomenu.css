@@ -32,7 +32,7 @@
      --size: 45px;
      width: var(--size);
      height:  var(--size);
-     border-radius:50%;
+     border: radius 10%;
      background-color:var(--color-blue-dark);
      padding:0.6rem 0.3;
      z-index: 10;
@@ -74,7 +74,6 @@
  .nav-main__btb-collapse-bg{
   height: 6.5%;
   width: var(--size-btn-collapse) ;
-  background-color: #7399C7;
   position:absolute;
   left:0 ;
   top: 0; ;
