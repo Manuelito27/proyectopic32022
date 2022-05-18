@@ -257,3 +257,59 @@ body {
 .content{
 	text-align: center;
 }
+
+
+/*Alertas formulario*/
+.alerta
+{
+	margin-bottom: 5px;
+	font-size: 22px;
+	letter-spacing: 1px;
+	width: 100%;
+	height: 50px;
+	font-weight: 600;
+	border-color: transparent;
+	background-color: rgba(255, 0, 0, 0.596);
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	padding-right: 15px;
+}
+
+.alerta span{
+	width: 100%;
+	padding-left: 15px;
+}
+
+.alerta-bg
+{
+	background-color: red;
+	height: 155px;
+	display: flex;
+	padding: 15px;
+	align-items: center;
+}
+.alerta.ocultar
+{
+	display: none;
+}
+
+.alerta i.close
+{
+	cursor: pointer;
+}
+
+.alerta.datos
+{
+	background-color: rgba(255, 230, 0, 0.596);
+}
+
+.alerta.datos .alerta-bg
+{
+	background-color: rgba(238, 255, 0, 0.788);
+}
+/*Alertas formulario*/

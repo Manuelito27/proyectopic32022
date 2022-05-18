@@ -18,11 +18,15 @@
 	    $consulta = mysqli_query($con,$q);
 		$array = mysqli_num_rows($consulta);
 		if($array==1){
-			header("location: pagina1.html");
-		}else{
-			echo '<script>alert("Datos incorrectos")</script>';
-		}
-		}else{
+				header("location: pagina1.html");
+			}
+		else{
+				echo '<script>alert("Datos incorrectos")</script>';
+				$error=true;
+				header("Location: index.php?error=$error");
+			}
+	}
+	else{
 		    $q = "SELECT * FROM alumno where ID_Alumno = '$Usuario' and Pass = '$pass'";
 			$consulta = mysqli_query($con,$q);
 			$array = mysqli_num_rows($consulta);
@@ -30,6 +34,8 @@
 				header("location: pagina1.html");
 			}else{
 		    	echo '<script>alert("Datos incorrectos")</script>';
+				$error=true;
+				header("Location: index.php?error=$error");
 			}
 		}
 		mysqli_close($con);
