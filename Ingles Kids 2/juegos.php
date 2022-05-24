@@ -174,7 +174,9 @@
                 ?>
 
                 <tr>
+                    
                     <td><img src="Tareas/tarea_<?php echo $rr['id'];?>.jpg" width="100px" height="100px" ></td>
+               
                     <td>
                         <?php echo $rr['nombre'];?>
 

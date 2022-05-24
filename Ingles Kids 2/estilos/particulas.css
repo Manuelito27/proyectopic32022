@@ -109,3 +109,39 @@
         opacity: 0; 
     }
 }
+
+.container{
+    display: flex;
+    gap: -100px;
+    margin-left: -80px;
+    text-align: center;
+
+}
+
+.container-all{
+    width: 100%;
+    max-width: 1000px;
+    
+    margin: auto;
+  
+
+
+}
+
+.container-all p{
+    font-size: 42px;
+    font-weight: 300;
+    color: #fff;
+
+
+}
+.container-all img{
+   margin-right: 20px;
+   
+   margin-bottom: -100px;
+   
+
+}
+
+
+
