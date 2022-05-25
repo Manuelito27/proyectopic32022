@@ -93,7 +93,7 @@
 
         <?php
             $conexion=mysqli_connect("localhost","root","","tareas");
-           if(isset($_POST['enviar'])){
+            if(isset($_POST['enviar'])){
             
             if(!empty($_POST['nombre'])){
                 $nombre=$_POST['nombre'];
@@ -170,8 +170,8 @@
 
                 </tr>
                 <?php
-                $ss=mysqli_query($conexion,"SELECT * FROM actividades ORDER BY nombre");    
-                while($rr=mysqli_fetch_array($ss)){
+                    $ss=mysqli_query($conexion,"SELECT * FROM actividades ORDER BY nombre");    
+                    while($rr=mysqli_fetch_array($ss)){
                 ?>
 
                 <tr>
@@ -205,7 +205,11 @@
         </div>
        
 
-
+        <script>
+            if(!localStorage.user)
+                window.location.replace("index.php");
+        </script>
+            
         <script src="jss/mainn.js"></script>
 
     </body>
