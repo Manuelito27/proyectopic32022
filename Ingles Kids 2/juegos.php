@@ -41,7 +41,7 @@
               <i class="far fa-grin-bean"></i>
               Inicio
            </a>
-           <a href="" class="nav-main__link-item">
+           <a href="primero.html" class="nav-main__link-item">
                <i class="far fa-grin-bean"></i>
               Temas
            </a>
