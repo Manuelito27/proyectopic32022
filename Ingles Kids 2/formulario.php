@@ -16,10 +16,7 @@
 		</div>
 		
 		<div class="formulario_registro">
-		
-		<!--
-			Esta parte se debe modificar porque esta raro xd
-		-->
+
 		<?php
 			if(isset($_POST["btnSubmit"])){
 				//Conexion con BD
@@ -33,16 +30,6 @@
 				$passc = $_POST['PassC'];
 				$rol = $_POST['Rol'];
 				$genero = $_POST['Genero'];
-
-				// if($apellidoP==""){
-				// 	echo '<script>alert("No se escribio Apellido Paterno")</script>';
-				// }else if($nombre==""){
-				// 	echo '<script>alert("No se escribio el nombre")</script>';
-				// }else if($pass==""){
-				// 	echo '<script>alert("No se escribio ninguna contraseña")</script>';
-				// }else if($passc!=$pass){
-				// 	echo '<script>alert("Las contraseñas son diferentes")</script>';
-				// }else{
 					if($rol=="Docente"){
 						$sql = "INSERT INTO docente (Nombre,ApellidoP,ApellidoM,Pass)
 						VALUES ('$nombre','$apellidoP','$apellidoM','$pass')";
@@ -53,7 +40,6 @@
 					$resultados = mysqli_query($con,$sql) or die('Error en la database');
 					header("location: index.php");
 					mysqli_close($con);
-				// }
 			}	
 		?>
 			<div class="alerta ocultar " id="alerta">
