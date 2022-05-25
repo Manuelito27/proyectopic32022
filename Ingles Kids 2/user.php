@@ -18,7 +18,11 @@
 	    $consulta = mysqli_query($con,$q);
 		$array = mysqli_num_rows($consulta);
 		if($array==1){
-				header("location: pagina1.html");
+				?>
+				<script>localStorage.setItem('user', <?php echo $Usuario;?>)
+				window.location.replace("pagina1.html");;
+				alert("¡Bienvenido!");</script> 
+				<?php
 			}
 		else{
 				echo '<script>alert("Datos incorrectos")</script>';
