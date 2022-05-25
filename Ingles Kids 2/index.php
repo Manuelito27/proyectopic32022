@@ -75,5 +75,13 @@
 			</div>
 		</div>
 	</section>
+
+	<script>
+           if(localStorage.user)
+		   {
+			window.location.replace("pagina1.html");
+		   }
+
+	</script>
 </body>
 </html>

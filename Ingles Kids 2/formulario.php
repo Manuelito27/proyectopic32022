@@ -92,5 +92,12 @@
 		</div>
 	</section>
 	<script src="jss/submitRegisterForm.js"></script>
+	<script>
+           if(localStorage.user)
+		   {
+			window.location.replace("pagina1.html");
+		   }
+
+	</script>
 </body>
 </html>
