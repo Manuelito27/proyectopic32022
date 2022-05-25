@@ -162,3 +162,84 @@
   height: 91.3vh;
 }
 
+/*Estilos para divs*/
+.divisiones
+{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+.divisiones a {
+    color: black;
+    width: 25%;
+    background-color: #258341;
+    border-radius: 55px;
+    margin: 20px 0;
+    box-shadow: 1px 1px 10px 2px #161616;
+}
+
+.divisiones div{
+  width: 560px;
+  margin: 40px auto;
+  height: 315px;
+  box-shadow: 1px 1px 15px 2px #161616;
+
+}
+
+.divisiones img{
+  width: 250px;
+}
+
+.divisiones .cuento
+{
+  width:  75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  color: black;
+  background: rgb(230,230,230);
+  background: linear-gradient(238deg, rgba(230,230,230,1) 0%, rgba(250,250,250,1) 46%);
+}
+.divisiones .cuento img
+{
+  width:  500px;
+}
+.divisiones .cuento p
+{
+  line-height: 2;
+  text-align: justify;
+  width: 60%;
+}
+
+.divisiones button{
+  margin: 15px;
+  padding: 15px;
+  width: 100px;
+  background-color: goldenrod;
+  border-color :goldenrod;
+  border-width: 1px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+audio::-webkit-media-controls-panel{
+  background-color: #e0e0e0;
+}
+
+.divisiones a:nth-child(2n) {
+  background-color: #d47c29;
+}
+.divisiones.vid{
+  flex-direction:column;
+
+}
+
+#espanol{
+  display: none;
+}
+
+/*Estilos para divs*/

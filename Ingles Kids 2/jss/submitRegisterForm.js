@@ -1,12 +1,12 @@
-let ap=document.getElementById("ApellidoP").value;
-let am=document.getElementById("ApellidoM").value;
-let name=document.getElementById("Nombre").value;
-let pass=document.getElementById("Pass").value;
-let passC=document.getElementById("PassC").value;
-let alertText=document.getElementById("alerta-text");
+
 function subir()
         {
-            
+            let ap=document.getElementById("ApellidoP").value;
+            let am=document.getElementById("ApellidoM").value;
+            let name=document.getElementById("Nombre").value;
+            let pass=document.getElementById("Pass").value;
+            let passC=document.getElementById("PassC").value;
+            let alertText=document.getElementById("alerta-text");
             if(name=="")
             {
                 alertText.textContent="No se escribió ningún nombre";
