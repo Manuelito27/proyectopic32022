@@ -122,7 +122,8 @@
     width: 100%;
     max-width: 1000px;
     
-    margin: auto;
+    
+    margin-left: 300px;
   
 
 
@@ -137,6 +138,7 @@
 }
 .container-all img{
    margin-right: 20px;
+ 
    
    margin-bottom: -100px;
    
