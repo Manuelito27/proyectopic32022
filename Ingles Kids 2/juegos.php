@@ -37,23 +37,24 @@
             </div>
             <!--menu-->
             <div class="nav-main_menu">
-            <a href="primero.html" class="nav-main__link-item">
-                <i class="far fa-grin-bean"></i>
-                First Unit
-            </a>
-            <a href="" class="nav-main__link-item">
-                <i class="far fa-grin-bean"></i>
-                Second Unit
-            </a>
-            <a href="" class="nav-main__link-item">
-                <i class="far fa-grin-bean"></i>
-                Third Unit
-            </a>
-            <a href="" class="nav-main__link-item">
-                <i class="far fa-grin-bean"></i>
-                Fourth Unit
-            </a>
-            </div>
+           <a href="pagina1.html" class="nav-main__link-item">
+              <i class="far fa-grin-bean"></i>
+              Inicio
+           </a>
+           <a href="" class="nav-main__link-item">
+               <i class="far fa-grin-bean"></i>
+              Temas
+           </a>
+           <a href="" class="nav-main__link-item">
+               <i class="far fa-grin-bean"></i>
+              Apoyos
+           </a>
+           <a href="juegos.php" class="nav-main__link-item">
+              <i class="far fa-grin-bean"></i>
+              Juegos
+           </a>
+        </div>
+    </div>
 
 
         </div>
