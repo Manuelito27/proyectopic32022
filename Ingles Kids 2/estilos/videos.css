@@ -1,0 +1,53 @@
+
+
+.containerrr{
+    position: relative;
+    min-height: 100vh;
+    background-color: aliceblue;
+
+    
+
+}
+
+
+.container .containerv{
+    
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+
+    
+
+}
+
+.container .containerv iframe{
+    height: 50px;
+    width: 350px;
+    border: 5px solid aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    cursor: pointer;
+    overflow: hidden;
+
+    
+
+}
+
+
+
+
+
+
+.containerv  iframe{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+
+.containerv  iframe:hover{
+    transform: scale(1.5);
+}
+
