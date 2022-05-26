@@ -55,7 +55,7 @@
                <i class="far fa-grin-bean"></i>
               Temas
            </a>
-           <a href="" class="nav-main__link-item">
+           <a href="apoyos.html" class="nav-main__link-item">
                <i class="far fa-grin-bean"></i>
               Apoyos
            </a>
@@ -63,6 +63,10 @@
               <i class="far fa-grin-bean"></i>
               Juegos
            </a>
+           <a href="logout.php" class="nav-main__link-item">
+                <i class="far fa-grin-bean"></i>
+                Salir
+            </a>
         </div>
     </div>
 
@@ -98,7 +102,7 @@
 
         </div>
         <?php
-            $conexion=mysqli_connect("localhost","root","","tareas");
+            $conexion=mysqli_connect("localhost","root","","bdpic3");
             if(isset($_POST['enviar'])){
             
             if(!empty($_POST['nombre'])){
@@ -106,22 +110,21 @@
                 $nombret=$_POST['tarea'];
                 if(!empty($_POST['id'])){
                    $id_maximo=$_POST['id'];
-                    mysqli_query($conexion,"UPDATE actividades SET nombre='$nombre' WHERE id='$id_maximo'");
+                    mysqli_query($conexion,"UPDATE tareas SET nombre='$nombre' WHERE id='$id_maximo'");
                    
                 }else{
-                    $sql=mysqli_query($conexion,"SELECT id FROM actividades WHERE nombre='$nombre'");
+                    $sql=mysqli_query($conexion,"SELECT id FROM tareas WHERE nombre='$nombre'");
                     if($row=mysqli_fetch_array($sql)){
                         echo 'este ya esta :C';
                     }else{
                         
                    
-                    mysqli_query($conexion,"INSERT INTO actividades (nombre) VALUES ('$nombre')");
-                    $ss=mysqli_query($conexion, "SELECT MAX(id) as id_maximo FROM actividades");
+                    mysqli_query($conexion,"INSERT INTO tareas (nombre) VALUES ('$nombre')");
+                    $ss=mysqli_query($conexion, "SELECT MAX(id) as id_maximo FROM tareas");
                     if($rr=mysqli_fetch_array($ss)){
                         $id_maximo=$rr['id_maximo'];
                        
                     }
-                    echo "se a realisado el registro de la tarea con exito";
                 }
             }
                 
@@ -131,27 +134,13 @@
                 if(is_uploaded_file($tmpimagen)){
                     copy($tmpimagen,$urlnueva);
                  
-                }else{
-                    echo 'no se hizo';
-
                 }
-                    
-
-            
-              
             } 
-
         }  
         ?>
-
-
-
-        
-
         
         <div  style="text-align: center; padding-left: 350px; padding-right: 350px;">
                 <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post" enctype="multipart/form-data">
-
                 <label for="Name" style="color: aliceblue; font-size: 25px;">Nombre de la actividad:</label>
                 <input type="text" name="tarea" size="50"> 
                 <label for="Name" style="color: aliceblue; font-size: 25px;">Nombre de el alumno:</label>
@@ -165,6 +154,7 @@
         </div>
 
         <div>
+            
             <table width="100%"  rules="all">
             <thead>
                     <td>Tarea</td>
@@ -173,14 +163,12 @@
 
             </thead>
                 <?php
-                    $ss=mysqli_query($conexion,"SELECT * FROM actividades ORDER BY nombre");    
+                    $ss=mysqli_query($conexion,"SELECT * FROM tareas ORDER BY nombre");    
                     while($rr=mysqli_fetch_array($ss)){
                 ?>
 
                 <tr>
-                    
                     <td><img src="Tareas/tarea_<?php echo $rr['id'];?>.jpg" width="100px" height="100px" ></td>
-               
                     <td>
                         <?php echo $rr['nombre'];?>
 
