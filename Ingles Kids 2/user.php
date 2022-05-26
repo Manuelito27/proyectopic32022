@@ -7,6 +7,8 @@
 	$Usuario = $_POST['Usuario'];
 	$pass = $_POST['Pass'];
 	$rol = $_POST['Rol'];
+	$_SESSION['user']=$Usuario;
+	$_SESSION['rol']=$rol;
 				
 	if($Usuario==""){
 		echo '<script>alert("No se escribio ningun usuario")</script>';

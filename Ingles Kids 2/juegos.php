@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['user'])) {
+        header('location: index.php');
+    }
+?>
+
 <!doctype html>
 <html>
     <head>
@@ -90,7 +97,6 @@
         <div>
 
         </div>
-
         <?php
             $conexion=mysqli_connect("localhost","root","","tareas");
             if(isset($_POST['enviar'])){
@@ -140,7 +146,7 @@
 
 
 
-
+        
 
         
         <div  style="text-align: center; padding-left: 350px; padding-right: 350px;">
@@ -206,8 +212,9 @@
             if(!localStorage.user)
                 window.location.replace("index.php");
         </script>
-            
         <script src="jss/mainn.js"></script>
-
+        <script>
+            console.log(localStorage.getItem('user'));
+        </script>
     </body>
 </html>
