@@ -168,7 +168,7 @@
             <table width="100%"  rules="all">
             <thead>
                     <td>Tarea</td>
-                    <td>NOMBRE</td>
+                    <td>Nombre</td>
                     <td>Reintentar</td>
 
             </thead>
@@ -208,13 +208,7 @@
         </div>
        
 
-        <script>
-            if(!localStorage.user)
-                window.location.replace("index.php");
-        </script>
+        
         <script src="jss/mainn.js"></script>
-        <script>
-            console.log(localStorage.getItem('user'));
-        </script>
     </body>
 </html>
