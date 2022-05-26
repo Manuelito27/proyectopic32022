@@ -96,6 +96,7 @@
 @media (max-width:768px){
     .parav  .popup-video iframe{
         width:95% ;
+        height: 100%;
     }
 }
 
