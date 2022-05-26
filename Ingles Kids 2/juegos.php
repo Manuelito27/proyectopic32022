@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['user'])) {
+        header('location: index.php');
+    }
+?>
+
 <!doctype html>
 <html>
     <head>
@@ -90,7 +97,6 @@
         <div>
 
         </div>
-
         <?php
             $conexion=mysqli_connect("localhost","root","","tareas");
             if(isset($_POST['enviar'])){
@@ -140,7 +146,7 @@
 
 
 
-
+        
 
         
         <div  style="text-align: center; padding-left: 350px; padding-right: 350px;">
@@ -162,7 +168,7 @@
             <table width="100%"  rules="all">
             <thead>
                     <td>Tarea</td>
-                    <td>NOMBRE</td>
+                    <td>Nombre</td>
                     <td>Reintentar</td>
 
             </thead>
@@ -202,12 +208,7 @@
         </div>
        
 
-        <script>
-            if(!localStorage.user)
-                window.location.replace("index.php");
-        </script>
-            
+        
         <script src="jss/mainn.js"></script>
-
     </body>
 </html>
