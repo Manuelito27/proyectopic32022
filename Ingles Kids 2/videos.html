@@ -78,7 +78,7 @@
               <div class="video">
 
 
-     
+                
                 <div class="containerv" >
                   <iframe width="250" height="350" src="https://www.youtube.com/embed/wtTAdfyejH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div >
@@ -112,14 +112,32 @@
                </div>
             </div>  
 
+            <div class="popup-video">
+                <span>&times;</span>
+                <iframe width="800" height="650" src="https://www.youtube.com/embed/wtTAdfyejH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay></iframe>
+        
+            </div>
+
             </div>
           
-        
+ 
 
           
 
  
 
+
+
+    <script>
+        document.querySelectorAll('.video iframe').forEach(vid => {
+            vid.onclick = () =>{
+                document.querySelector('.popup-video').style.display = 'block';
+                document.querySelector('.popup-video iframe').src = vid.getAttribute('src');
+            }
+            
+        });
+
+    </script>
 
 
    
