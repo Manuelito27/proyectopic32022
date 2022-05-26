@@ -10,6 +10,18 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+
+
+
+.hola{
+    transition: transform .5s;
+}
+
+.hola:hover{
+
+    transform: scale(1.5);
+}
+
 .titulo {
     font-size: 90px;
     font-family: 'Dancing Script', cursive;
