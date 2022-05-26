@@ -78,11 +78,8 @@
 
         <div style="text-align:center">
             <div class="descripcion " style="color: aliceblue; padding-left: 160px; padding-right: 160px;" >
-            <br >Con el vocabulario visto en la sección de información se tendrá que resolver
-
-                la siguiente sopa de letras encontrando algunas de las palabras vistas 
-
-                anterior mente</br>
+            <br >Con el vocabulario visto en la sección de información se tendrá que resolver la siguiente 
+            sopa de letras encontrando algunas de las palabras vistas anteriormente</br>
             </div>
             <br>
             <iframe width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/12215287-sopa_de_letras_vocabulario.html"></iframe>
@@ -101,9 +98,6 @@
             if(!empty($_POST['nombre'])){
                 $nombre=$_POST['nombre'];
                 $nombret=$_POST['tarea'];
-           
-
-
                 if(!empty($_POST['id'])){
                    $id_maximo=$_POST['id'];
                     mysqli_query($conexion,"UPDATE actividades SET nombre='$nombre' WHERE id='$id_maximo'");
