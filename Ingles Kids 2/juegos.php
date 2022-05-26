@@ -172,9 +172,9 @@
             <td>
                 <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="<?php echo $rr[0];?>">
-                    <label for="Name" style="color: aliceblue; font-size: 18px;">Nombre de la actividad:</label>
+                    <label  for="Name" style="color: #000;; font-size: 18px;">Nombre de la actividad:</label>
                     <input type="text" name="tarea" size="50">
-                    <label for="Name" style="color: aliceblue; font-size: 18px;">Numero de lista:</label>
+                    <label for="Name" style="color: #000;; font-size: 18px;">Numero de lista:</label>
                     <input type="text" name="nombre" size="50" require value="<?php echo $rr['nombre']?>">
                     <input type="submit" value="Actualizar" name="enviar" />
                     <input type="reset" value="Reiniciar" />
@@ -201,9 +201,9 @@
             <td>
                 <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="<?php echo $rr[0];?>">
-                    <label for="Name" style="color: aliceblue; font-size: 18px;">Nombre de la actividad:</label>
+                    <label for="Name" style="color: #000;; font-size: 18px;">Nombre de la actividad:</label>
                     <input type="text" name="tarea" size="50">
-                    <label for="Name" style="color: aliceblue; font-size: 18px;">Numero de lista:</label>
+                    <label for="Name" style="color: #000;; font-size: 18px;">Numero de lista:</label>
                     <input type="text" name="nombre" size="50" require value="<?php echo $rr['nombre']?>">
                     <input type="submit" value="Actualizar" name="enviar" />
                     <input type="reset" value="Reiniciar" />
