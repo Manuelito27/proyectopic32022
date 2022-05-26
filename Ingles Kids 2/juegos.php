@@ -160,12 +160,12 @@
 
         <div>
             <table width="100%"  rules="all">
-                <tr>
+            <thead>
                     <td>Tarea</td>
                     <td>NOMBRE</td>
                     <td>Reintentar</td>
 
-                </tr>
+            </thead>
                 <?php
                     $ss=mysqli_query($conexion,"SELECT * FROM actividades ORDER BY nombre");    
                     while($rr=mysqli_fetch_array($ss)){
