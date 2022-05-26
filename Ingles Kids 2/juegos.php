@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="estilos/estilomenu.css" type="text/css">
         <link rel="stylesheet" href="estilos/estiloscarrucel.css" type="text/css">
         <link rel="stylesheet" href="estilos/carrudos.css" type="text/css">
+        <link rel="stylesheet" href="estilos/tabla.css" type="text/css">
+
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Inicio</title>
     </head>
