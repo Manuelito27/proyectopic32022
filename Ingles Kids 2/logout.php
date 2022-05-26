@@ -6,6 +6,3 @@
 	?>
 	window.location.replace("index.php");
 </script>
-
-
-
